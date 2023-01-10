@@ -85,8 +85,9 @@ function appendH2(textContent) {
 
 function appendDiv(color) {
   const divElement = document.createElement('div');
-  divElement.classList.add('color-sample');
+  divElement.textContent = color;
   divElement.style.background = color;
+  divElement.classList.add('color-sample');
   document.body.append(divElement);
 }
 
